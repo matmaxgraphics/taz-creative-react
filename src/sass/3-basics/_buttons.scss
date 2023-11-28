@@ -1,0 +1,32 @@
+.btn {
+  border: unset;
+  font-family: inherit;
+  font-size: 18px;
+  padding: 8px 16px;
+  background-color: $primaryColor;
+  color: $bodyTextColor;
+  height: 66px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: $transitionDuration;
+  a{
+    text-decoration: underline;
+  }
+  &:hover {
+    background-color: $secondaryColor;
+    color: #fff;
+    transition: $transitionDuration;
+  }
+}
+
+.secondary-btn {
+  padding: 8px 16px;
+  background-color: transparent;
+  color: $secondaryColor;
+  transition: $transitionDuration;
+  &:hover {
+    color: $grey-01;
+    background-color: unset;
+    transition: $transitionDuration;
+  }
+}

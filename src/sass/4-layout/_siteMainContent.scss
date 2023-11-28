@@ -14,7 +14,6 @@
   }
 }
 
-
 .intro--section {
   margin-top: 48px;
   .intro--section_wrapper {
@@ -64,8 +63,8 @@
   .expertise--container {
     max-width: 1200px;
     margin-bottom: 48px;
-    article{
-      &:nth-child(2){
+    article {
+      &:nth-child(2) {
         margin: 64px 0;
       }
     }
@@ -105,42 +104,41 @@
   }
 }
 
-
-.project--section{
+.project--section {
   margin-top: 48px;
-  .project--section_wrapper{
+  .project--section_wrapper {
     padding: 24px;
   }
-  header{
+  header {
     max-width: 800px;
     margin-bottom: 48px;
     h2 {
       margin-bottom: 16px;
     }
   }
-  .projects--container{
+  .projects--container {
     display: flex;
     flex-flow: row wrap;
     gap: 24px;
     row-gap: 32px;
   }
-  .project--item{
+  .project--item {
     display: flex;
     flex-direction: column;
     gap: 16px;
     width: calc(50% - 24px);
-    img{
+    img {
       width: 100%;
       height: 390px;
     }
-    ul{
+    ul {
       display: flex;
       gap: 8px;
       flex-flow: row wrap;
       align-items: center;
       color: $accentColor;
     }
-    span.circle{
+    span.circle {
       display: block;
       width: 3px;
       height: 3px;
@@ -148,24 +146,69 @@
       background-color: $accentColor;
     }
   }
+  .cta-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+  }
 }
 
-
-@media(max-width: 700px){
-  .project--section{
-    .project--item{
-      width: 100%;  
+@media (max-width: 700px) {
+  .project--section {
+    .project--item {
+      width: 100%;
     }
-  }  
+  }
 }
 
-@media (max-width: 450px){
-  .project--section{
-    .project--item{
-      img{
+@media (max-width: 450px) {
+  .project--section {
+    .project--item {
+      img {
         width: 100%;
         height: 300px;
-      } 
+      }
     }
-  }  
+  }
+}
+
+
+
+.how-we-works--section {
+  padding: 24px;
+  margin-top: 64px;
+  header {
+    max-width: 800px;
+    margin-bottom: 48px;
+    h2 {
+      margin-bottom: 16px;
+    }
+  }
+  .flex-responsive{
+    display: flex;
+    gap: 24px;
+    flex-flow: row wrap;
+  }
+  .how-we-work--item{
+    width: calc(33.33% - 24px);
+    h5{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    span{
+      transform: translateY(2px);
+    }
+  }
+
+}
+
+
+@media (max-width: 1000px){
+  .how-we-works--section {
+    .how-we-work--item{
+      width: 100%;
+    }
+  }
 }

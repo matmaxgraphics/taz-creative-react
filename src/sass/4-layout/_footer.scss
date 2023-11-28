@@ -1,60 +1,70 @@
 footer {
   margin-top: 64px;
+  height: 441px;
+  background: #010101 url('../../assets/images/taz-pattern.png') no-repeat;
+  background-position: center;
+  position: relative;
+  h2,
+  p,
+  a {
+    color: #fff;
+  }
+  padding: 24px;
   .footer-content {
     display: flex;
     justify-content: space-between;
     gap: 24px;
-    padding: 24px;
-    h4 {
-      margin-bottom: 16px;
-    }
-  }
-  .author--details {
-    max-width: 800px;
-    h5 {
-      margin-bottom: 16px;
-    }
-    .author-details_content {
-      display: flex;
-      gap: 16px;
-    }
-    .img-container {
-      width: 40%;
-      max-height: 240px;
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-    .text-description {
-      width: 60%;
-    }
-  }
-  .contact--details {
+    flex-direction: column;
     a {
-      display: block;
-      margin-bottom: 8px;
+      transition: $transitionDuration;
       &:hover {
         text-decoration: underline;
+        transition: $transitionDuration;
       }
     }
-    .social-links {
-      margin-top: 24px;
+    h2 {
+      margin-bottom: 16px;
+      span {
+        color: $primaryColor;
+      }
     }
   }
-  .bottom--footer {
-    padding: 24px;
-    .bottom-wrapper {
-      display: flex;
-      justify-content: space-between;
-      flex-flow: row-reverse wrap;
-      gap: 24px;
+  // article {
+  //   width: calc(33.33% - 24px);
+  // }
+  .interference{
+    display: flex;
+    gap: 48px;
+    width: 60%;
+  }
+  .contact--info {
+    .external--links {
+      margin-top: 24px;
     }
-    span {
-      display: inline;
-      a:nth-child(1) {
-        margin-right: 24px;
+    li {
+      &:nth-child(2) {
+        margin: 16px 0;
       }
+    }
+  }
+  .social--links {
+    ul {
+      display: flex;
+      gap: 16px;
+      // flex-flow: row wrap;
+    }
+    address {
+      color: #fff;
+      font-style: normal;
+      margin-top: 16px;
+    }
+  }
+  
+
+  .pattern--container{
+    img{
+      width: min-content;
+
     }
   }
 }
@@ -95,10 +105,10 @@ footer {
     }
 
     .bottom--footer {
-        .bottom-wrapper {
-          display: flex;
-          flex-direction: column-reverse;
-        }
+      .bottom-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
       }
+    }
   }
 }

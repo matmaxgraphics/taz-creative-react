@@ -1,5 +1,5 @@
 import React from "react";
-import DemoImage from '../../assets/images/demo-img.png';
+import DemoImage from "../../assets/images/demo-img.png";
 
 function ProjectSection() {
   return (
@@ -82,6 +82,12 @@ function ProjectSection() {
               </ul>
             </div>
           </article>
+        </div>
+
+        <div className="cta-btn">
+          <button className="btn">
+            <a href="">See more projects</a>
+          </button>
         </div>
       </div>
     </section>

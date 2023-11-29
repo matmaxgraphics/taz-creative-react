@@ -1,20 +1,19 @@
 footer {
   margin-top: 64px;
   height: 441px;
-  background: #010101 url('../../assets/images/taz-pattern.png') no-repeat;
-  background-position: center;
+  background: #010101;
+  padding: 24px;
   position: relative;
   h2,
   p,
   a {
     color: #fff;
   }
-  padding: 24px;
   .footer-content {
     display: flex;
     justify-content: space-between;
-    gap: 24px;
     flex-direction: column;
+    padding-top: 24px;
     a {
       transition: $transitionDuration;
       &:hover {
@@ -29,15 +28,19 @@ footer {
       }
     }
   }
-  // article {
-  //   width: calc(33.33% - 24px);
-  // }
-  .interference{
+  .footer-flex{
     display: flex;
-    gap: 48px;
-    width: 60%;
+    justify-content: space-between;
+    gap: 24px;
+    flex-flow: row wrap;
   }
+  // article{
+  //   // width: calc(33.33% - 24px);
+  // }
   .contact--info {
+    p{
+      max-width: 420px;
+    }
     .external--links {
       margin-top: 24px;
     }
@@ -64,50 +67,39 @@ footer {
   .pattern--container{
     img{
       width: min-content;
+      position: absolute;
+      bottom: 0;
+      right: 0;
 
     }
   }
 }
 
-@media (max-width: 750px) {
-  footer {
-    .author--details {
-      .author-details_content {
-        flex-flow: row wrap;
-      }
-      .img-container {
-        width: 80%;
-      }
-      .text-description {
-        width: 80%;
-        margin-top: 24px;
+@media(max-width:1020px){
+  footer{
+    .pattern--container{
+      img{
+        width: 200px;
+  
       }
     }
   }
 }
 
-@media (max-width: 500px) {
-  footer {
-    .footer-content {
-      flex-direction: column;
+@media (max-width: 735px){
+  footer{
+    .footer-flex{
+      gap: 48px;
     }
-    .author--details {
-      .author-details_content {
-        flex-flow: row wrap;
-      }
-      .img-container {
-        width: 100%;
-      }
-      .text-description {
-        width: 100%;
-        margin-top: 32px;
-      }
-    }
+  }
+}
 
-    .bottom--footer {
-      .bottom-wrapper {
-        display: flex;
-        flex-direction: column-reverse;
+@media (max-width: 480px){
+  footer{
+    height: 600px;
+    .pattern--container{
+      img{
+        width: 160px;
       }
     }
   }

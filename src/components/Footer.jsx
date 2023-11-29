@@ -1,4 +1,4 @@
-import TazPattern from '../assets/images/taz-pattern.png'
+import TazPattern from "../assets/images/taz-pattern.png";
 function Footer() {
   return (
     <footer>
@@ -6,7 +6,7 @@ function Footer() {
         <h2>
           Let's <span>work</span>
         </h2>
-        <div className="interference">
+        <div className="footer-flex">
           <article className="contact--info">
             <p>
               You're here because you're seeking our expertise for a project or
@@ -28,25 +28,23 @@ function Footer() {
             </div>
           </article>
           <article className="social--links">
-            <div className="social--media">
-              <ul>
-                <li>
-                  <a href="">Instagram</a>
-                </li>
-                <li>
-                  <a href="">Twitter</a>
-                </li>
-                <li>
-                  <a href="">Telegram</a>
-                </li>
-              </ul>
-              <address>Tallin, Estonia</address>
-            </div>
+            <ul>
+              <li>
+                <a href="">Instagram</a>
+              </li>
+              <li>
+                <a href="">Twitter</a>
+              </li>
+              <li>
+                <a href="">Telegram</a>
+              </li>
+            </ul>
+            <address>Tallin, Estonia</address>
+          </article>
+          <article className="pattern--container">
+            <img src={TazPattern} alt="" />
           </article>
         </div>
-        {/* <article className="pattern--container">
-            <img src={TazPattern} alt="" />
-        </article> */}
       </main>
     </footer>
   );

@@ -2,18 +2,24 @@ import CircleShape from "../../assets/images/circle.svg";
 import MultiplyShape from "../../assets/images/multiply.svg";
 import SquareShape from "../../assets/images/square.svg";
 
+import FadeUpAnimation from "../../Animation/FadeUpAnimation";
+
 function HowItWorks() {
   return (
     <section className="how-we-works--section">
       <div className="how-we-works--wrapper max-width">
-        <header>
-          <h2>How we work</h2>
-          <p className="large--text">
-            We offer services to our clients in three ways:
-          </p>
-        </header>
+        <FadeUpAnimation>
+          <header>
+            <h2>How we work</h2>
+            <p className="large--text">
+              We offer services to our clients in three ways:
+            </p>
+          </header>
+        </FadeUpAnimation>
         <div className="flex-responsive">
+
           <article className="how-we-work--item">
+          <FadeUpAnimation>
             <h5>
               <span>
                 <img src={SquareShape} alt="" />
@@ -25,9 +31,11 @@ function HowItWorks() {
               specific services (e.g., Logo Design, Web Design) and collaborate
               within a defined timeframe, all within our creative network.
             </p>
+            </FadeUpAnimation>
           </article>
 
           <article className="how-we-work--item">
+            <FadeUpAnimation>
             <h5>
               <span>
                 <img src={CircleShape} alt="" />
@@ -41,9 +49,11 @@ function HowItWorks() {
               solutions for your media needs, servicing a maximum of five
               clients.
             </p>
+            </FadeUpAnimation>
           </article>
 
           <article className="how-we-work--item">
+            <FadeUpAnimation>
             <h5>
               <span>
                 <img src={MultiplyShape} alt="" />
@@ -54,6 +64,7 @@ function HowItWorks() {
               TAZ offers discreet support to creative agencies for complex
               client projects under non-disclosure agreements.
             </p>
+            </FadeUpAnimation>
           </article>
         </div>
       </div>

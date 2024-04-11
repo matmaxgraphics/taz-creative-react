@@ -1,26 +1,34 @@
 import React from "react";
+import FadeUpAnimation from "../../Animation/FadeUpAnimation";
 
 function AboutSection() {
   return (
     <section className="intro--section">
       <div className="intro--section_wrapper max-width">
-        <header>
-          <small className="heading-tag">/MEET TAZ</small>
-          <h2>Where creativity meets innovation</h2>
-        </header>
+        <FadeUpAnimation>
+          <header>
+            <small className="heading-tag">/MEET TAZ</small>
+            <h2>Where creativity meets innovation</h2>
+          </header>
+        </FadeUpAnimation>
 
         <article className="intro--wrapper">
-          <p className="large--text">
-            TAZ Creative Group is a colony of handpicked veterans dedicated to
-            providing relevant services and solutions to businesses, brands,
-            people and communities.
-          </p>
+          <FadeUpAnimation>
+            <p className="large--text">
+              TAZ Creative Group is a colony of handpicked veterans dedicated to
+              providing relevant services and solutions to businesses, brands,
+              people and communities.
+            </p>
+          </FadeUpAnimation>
 
-          <p className="large--text">
-            What drives us is the desire to introduce creativity and innovation
-            into teams and their products, consequently amplifying their
-            intended impacts, and accelerating attainment of their goals.
-          </p>
+          <FadeUpAnimation>
+            <p className="large--text">
+              What drives us is the desire to introduce creativity and
+              innovation into teams and their products, consequently amplifying
+              their intended impacts, and accelerating attainment of their
+              goals.
+            </p>
+          </FadeUpAnimation>
         </article>
       </div>
     </section>

@@ -47,7 +47,7 @@ function Footer() {
                   <a href="">Telegram</a>
                 </li>
               </ul>
-              <address>Tallin, Estonia</address>
+              <address>Tallinn, Estonia</address>
             </article>
           </FadeUpAnimation>
             <article className="pattern--container">

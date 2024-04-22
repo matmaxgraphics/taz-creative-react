@@ -9,8 +9,8 @@ function ExpertiseSection() {
           <FadeUpAnimation>
             <h2>Expertise</h2>
             <p className="large--text">
-              Our dedicated 8-man team excels in a specialized range of services
-              encompassing visuals, writing, and programming, all executed by
+              Our dedicated team excels in a specialized range of services
+              encompassing research, visuals, writing, and programming, all executed by
               certified professionals with passion and expertise.
             </p>
           </FadeUpAnimation>

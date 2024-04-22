@@ -8,7 +8,7 @@ function HeroSection() {
         <FadeUpAnimation>
         <h1>
           Your professional service partner for Design, Interaction &
-          Development
+          Development 
         </h1>
         </FadeUpAnimation>
         <div className="btn-group">

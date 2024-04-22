@@ -24,9 +24,9 @@ function ProjectSection() {
         <div className="projects--container">
           <article className="project--item">
             <FadeUpAnimation>
-              <img src={Anyworkx} alt="" />
+              <img src={AnyworkImage} alt="" />
               <h4>Anyworkx Africa</h4>
-              <p>Brand Identity and website development for anyworkx app </p>
+              <p>Brand Identity and web app development for AnyWorkX App </p>
               <div className="project-tag">
                 <ul>
                   <li>Branding</li>

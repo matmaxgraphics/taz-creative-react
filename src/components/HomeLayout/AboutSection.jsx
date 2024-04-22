@@ -15,9 +15,7 @@ function AboutSection() {
         <article className="intro--wrapper">
           <FadeUpAnimation>
             <p className="large--text">
-              TAZ Creative Group is a colony of handpicked veterans dedicated to
-              providing relevant services and solutions to businesses, brands,
-              people and communities.
+            We drive global innovation by collaborating with People, Start-ups, Scale-ups and government MDAs worldwide to research, design, and deploy advanced e-services, SaaS, IaaS, and PaaS platforms.
             </p>
           </FadeUpAnimation>
 
